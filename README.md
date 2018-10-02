@@ -46,10 +46,35 @@ Take a baseline installation of a AWS Lightsail Linux server and prepare it to h
 
 ### Secure The Server
 #### Step 3 - Update all currently installed packages
-* From Ubuntu Linux server command prompt, run the following `apt-get` commands:
+* When logging into Ubuntu Linux server, the Welcome message will indicate the number of packages can be updated and how many updates are security updates:
+
+      Welcome to Ubuntu 18.04.1 LTS (GNU/Linux 4.15.0-1023-aws x86_64)
+
+      * Documentation:  https://help.ubuntu.com
+      * Management:     https://landscape.canonical.com
+      * Support:        https://ubuntu.com/advantage
+
+      * Security certifications for Ubuntu!
+        We now have FIPS, STIG, CC and a CIS Benchmark.
+
+        - http://bit.ly/Security_Certification
+
+      * Want to make a highly secure kiosk, smart display or touchscreen?
+        Here's a step-by-step tutorial for a rainy weekend, or a startup.
+
+        - https://bit.ly/secure-kiosk
+
+      Get cloud support with Ubuntu Advantage Cloud Guest:
+        http://www.ubuntu.com/business/services/cloud
+
+      3 packages can be updated.
+      0 updates are security updates.
+
+* Run the following commands to bring the Ubuntu Linux server up-to-date:
 
       $ sudo apt-get update
       $ sudo apt-get upgrade
+      $ sudo do-release-upgrade
 
 #### Step 4 - Change the SSH port from 22 to 2200
 * Change SSH Port from **22** to **2200** in `/etc/ssh/sshd_config` file:
@@ -158,14 +183,6 @@ Follow the instructions from [How To Secure PostgreSQL on an Ubuntu VPS](https:/
 * Install PostgreSQL:
 
       $ sudo apt-get install postgresql postgresql-contrib
-      
-      Setting up postgresql-9.5 (9.5.14-0ubuntu0.16.04) ...
-      Creating new cluster 9.5/main ...
-            config /etc/postgresql/9.5/main
-            data   /var/lib/postgresql/9.5/main
-            locale en_US.UTF-8
-            socket /var/run/postgresql
-            port   5432
 
 * Verify that no remote connections are allowed by looking in the host based authentication file:
       
