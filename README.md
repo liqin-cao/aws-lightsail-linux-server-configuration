@@ -358,4 +358,3 @@ Follow the instructions from [How To Deploy a Flask Application on an Ubuntu VPS
 * [How To Secure PostgreSQL on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps)
 * [How To Deploy a Flask Application on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
 * [How To Hide Git Repos on Public Sites](https://davidegan.me/hide-git-repos-on-public-sites/)
-* [Setting up Apache Server with SSL Support on Ubuntu](https://www.maketecheasier.com/apache-server-ssl-support/)
