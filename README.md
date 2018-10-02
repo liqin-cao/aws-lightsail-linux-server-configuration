@@ -74,6 +74,11 @@ Take a baseline installation of a AWS Lightsail Linux server and prepare it to h
 
       $ sudo apt-get update
       $ sudo apt-get upgrade
+      
+* If `sudo apt-get upgrade` does not upgrade all packages, run the following command:
+
+      $ sudo apt-get update && sudo apt-get dist-upgrade
+      or
       $ sudo do-release-upgrade
 
 #### Step 4 - Change the SSH port from 22 to 2200
